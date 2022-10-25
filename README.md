@@ -9,7 +9,7 @@ Section 33 covered:
 - [x] Assigning Types
 - [x] Type Inference & Type Casting
 - [x] Configuring TypeScript
-- [ ] Working with Union Types
+- [x] Working with Union Types
 - [ ] Using Object & Array Types
 - [ ] Working with Type Aliases & Interfaces
 - [ ] Understanding Generics
