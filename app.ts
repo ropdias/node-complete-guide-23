@@ -7,7 +7,23 @@ const buttonElement = document.querySelector("button")!;
 const numResults: number[] = []; // Declaring a array of numbers
 const textResults: string[] = []; // Declaring a array of strings
 
-function add(num1: number | string, num2: number | string) {
+// Type Aliases:
+type NumOrString = number | string;
+type Result = { val: number; timestamp: Date };
+// Interfaces:
+interface ResultObj {
+  val: number;
+  timestamp: Date;
+}
+// When to use Type Alias and when to use Interface:
+// 1) If you are just defining the structure of an object you can use either of the two. Using interfaces is a bit more common.
+// 2) Interfaces can however also be used to force classes to implement certain methods or functionalities.
+// But for basic type aliasing, it doesn't matter if you use type or interface
+// Important note: if you add your own class or contructor function you could use the class name as a type as well just 
+// like when you define a type or interface. And that's is true for any constructor and class.
+// Like when using the class Date as a type:
+
+function add(num1: NumOrString, num2: NumOrString) {
   // If we add the if check with typeof, then TS let us sum the numbers if the types are equal.
   // This is called Type Guard: because we run different code based on different types we're
   if (typeof num1 === "number" && typeof num2 === "number") {
@@ -18,7 +34,7 @@ function add(num1: number | string, num2: number | string) {
   return +num1 + +num2; // Forcing a conversion to a number if one is string and the other is a number
 }
 
-function printResult(resultObj: { val: number; timestamp: Date }) {
+function printResult(resultObj: Result) {
   console.log(resultObj.val);
 }
 
@@ -36,6 +52,6 @@ buttonElement.addEventListener("click", () => {
   console.log(stringResult);
   // Since TS cant understand that result is always a number we should cast with "as number"
   // because we know that this here is always a number
-  printResult({val: result as number, timestamp: new Date()});
+  printResult({ val: result as number, timestamp: new Date() });
   console.log(numResults, textResults);
 });
