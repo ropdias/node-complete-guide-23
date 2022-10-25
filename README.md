@@ -4,8 +4,8 @@ Examples from the **"Section 33: NodeJS & TypeScript"** of the course **"NodeJS 
 
 Section 33 covered:
 
-- [ ] TypeScript: What & Why?
-- [ ] TypeScript Setup
+- [x] TypeScript: What & Why?
+- [x] TypeScript Setup
 - [ ] Assigning Types
 - [ ] Type Inference & Type Casting
 - [ ] Configuring TypeScript

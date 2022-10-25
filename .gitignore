@@ -10,8 +10,5 @@
 # env
 .env
 
-# images
-/images
-
-# data
-/data
+#Compiled JS files:
+*.js
