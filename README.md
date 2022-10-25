@@ -6,7 +6,7 @@ Section 33 covered:
 
 - [x] TypeScript: What & Why?
 - [x] TypeScript Setup
-- [ ] Assigning Types
+- [x] Assigning Types
 - [ ] Type Inference & Type Casting
 - [ ] Configuring TypeScript
 - [ ] Working with Union Types
