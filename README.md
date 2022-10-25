@@ -12,8 +12,8 @@ Section 33 covered:
 - [x] Working with Union Types
 - [x] Using Object & Array Types
 - [x] Working with Type Aliases & Interfaces
-- [ ] Understanding Generics
-- [ ] A First Summary
+- [x] Understanding Generics
+- [x] A First Summary
 - [ ] Node & TypeScript: Setup
 - [ ] Getting Started with Node and TypeScript
 - [ ] Writing TypeScript Express.js Code

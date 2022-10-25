@@ -4,8 +4,8 @@ const num1Element = document.getElementById("num1") as HTMLInputElement;
 const num2Element = document.getElementById("num2") as HTMLInputElement;
 const buttonElement = document.querySelector("button")!;
 
-const numResults: number[] = []; // Declaring a array of numbers
-const textResults: string[] = []; // Declaring a array of strings
+const numResults: Array<Number> = []; // Declaring a array of numbers with the Generic Type
+const textResults: string[] = []; // Declaring a array of strings with a shortcut in TS
 
 // Type Aliases:
 type NumOrString = number | string;
@@ -19,7 +19,7 @@ interface ResultObj {
 // 1) If you are just defining the structure of an object you can use either of the two. Using interfaces is a bit more common.
 // 2) Interfaces can however also be used to force classes to implement certain methods or functionalities.
 // But for basic type aliasing, it doesn't matter if you use type or interface
-// Important note: if you add your own class or contructor function you could use the class name as a type as well just 
+// Important note: if you add your own class or contructor function you could use the class name as a type as well just
 // like when you define a type or interface. And that's is true for any constructor and class.
 // Like when using the class Date as a type:
 
@@ -54,4 +54,20 @@ buttonElement.addEventListener("click", () => {
   // because we know that this here is always a number
   printResult({ val: result as number, timestamp: new Date() });
   console.log(numResults, textResults);
+});
+
+// Promise is a Generic Type because it eventually it resolves to a value, and the value that
+// it resolves to that's the generic type for the promise. In the example below, it resolves to a String,
+// so we can set the type to which promise will resolve to using <String> after the word Promise:
+// Important point: You can't set brackets on every built-in object, it needs to be an object that supports this. 
+// But the Promise constructor function does supports Generic Types because you can set the 
+// value the promise will eventually resolve to.
+const myPromise = new Promise<string>((resolve, reject) => {
+  setTimeout(() => {
+    resolve("It worked!");
+  }, 1000);
+});
+
+myPromise.then((result) => {
+  console.log(result.split("w")); // TS just understands this because we add Promise<String>
 });
