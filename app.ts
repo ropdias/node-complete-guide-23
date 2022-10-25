@@ -1,7 +1,7 @@
 // If we add an "!" in the end we let TS know that we will get an element for sure and not "null"
 // We had to add "as HTMLInputElement" to let TS knows that we will get an HTMLElement with a value property
-const num1Element = document.getElementById("num1")! as HTMLInputElement;
-const num2Element = document.getElementById("num2")! as HTMLInputElement;
+const num1Element = document.getElementById("num1") as HTMLInputElement;
+const num2Element = document.getElementById("num2") as HTMLInputElement;
 const buttonElement = document.querySelector("button")!;
 
 function add(num1: number, num2: number) {
