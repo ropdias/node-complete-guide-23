@@ -24,7 +24,7 @@ router.post("/todo", bodyParser.json(), (req, res, next) => {
   res.status(201).json({ message: "Added Todo", todo: newTodo, todos: todos });
 });
 
-router.put("/todo/:todoId", (req, res, next) => {
+router.put("/todo/:todoId", bodyParser.json(), (req, res, next) => {
   const tid = req.params.todoId;
   const todoIndex = todos.findIndex((todoItem) => todoItem.id === tid);
   if (todoIndex >= 0) {

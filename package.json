@@ -4,7 +4,8 @@
   "description": "Examples from the **\"Section 33: NodeJS & TypeScript\"** of the course **\"NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)\"** by Academind (Maximilian Schwarzmüller).",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
