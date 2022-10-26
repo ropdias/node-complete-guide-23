@@ -15,7 +15,7 @@ Section 33 covered:
 - [x] Understanding Generics
 - [x] A First Summary
 - [x] Node & TypeScript: Setup
-- [ ] Getting Started with Node and TypeScript
+- [x] Getting Started with Node and TypeScript
 - [ ] Writing TypeScript Express.js Code
 - [ ] Adding REST Routes with TypeScript
 - [ ] Finishing the REST Routes
