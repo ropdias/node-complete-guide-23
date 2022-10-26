@@ -16,7 +16,7 @@ Section 33 covered:
 - [x] A First Summary
 - [x] Node & TypeScript: Setup
 - [x] Getting Started with Node and TypeScript
-- [ ] Writing TypeScript Express.js Code
+- [x] Writing TypeScript Express.js Code
 - [ ] Adding REST Routes with TypeScript
 - [ ] Finishing the REST Routes
 - [ ] Testing the API
