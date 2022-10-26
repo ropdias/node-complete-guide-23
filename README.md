@@ -14,7 +14,7 @@ Section 33 covered:
 - [x] Working with Type Aliases & Interfaces
 - [x] Understanding Generics
 - [x] A First Summary
-- [ ] Node & TypeScript: Setup
+- [x] Node & TypeScript: Setup
 - [ ] Getting Started with Node and TypeScript
 - [ ] Writing TypeScript Express.js Code
 - [ ] Adding REST Routes with TypeScript
