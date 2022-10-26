@@ -20,7 +20,7 @@ Section 33 covered:
 - [x] Adding REST Routes with TypeScript
 - [x] Finishing the REST Routes
 - [x] Testing the API
-- [ ] Using Type Casting
+- [x] Using Type Casting
 - [ ] Moving to a Better Project Structure
 
 
