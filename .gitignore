@@ -6,9 +6,10 @@
 
 # production
 /build
+/dist
 
 # env
 .env
 
-#Compiled JS files:
+# Compiled JS files:
 *.js

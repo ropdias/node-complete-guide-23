@@ -21,7 +21,7 @@ Section 33 covered:
 - [x] Finishing the REST Routes
 - [x] Testing the API
 - [x] Using Type Casting
-- [ ] Moving to a Better Project Structure
+- [x] Moving to a Better Project Structure
 
 
 
